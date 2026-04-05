@@ -57,6 +57,14 @@ export function Hero() {
               <ArrowRight className="w-4 h-4" />
             </a>
 
+            <a
+              href="/Blue-Light-Blue-CV.pdf"
+              download
+              className="inline-flex items-center gap-2 bg-white border border-blue-200 hover:bg-blue-50 text-blue-700 px-5 py-3 rounded-full font-medium transition-all hover:shadow-md"
+            >
+              Download CV
+            </a>
+
             <div className="flex items-center gap-3 ml-4">
               <a
                 href="https://github.com/Ovindu0812"

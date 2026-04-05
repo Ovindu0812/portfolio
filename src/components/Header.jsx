@@ -70,6 +70,13 @@ export function Header() {
           >
             Hire Me
           </a>
+          <a
+            href="/Blue-Light-Blue-CV.pdf"
+            download
+            className="ml-2 bg-white border border-blue-200 text-blue-700 px-4 py-2 rounded-full font-medium transition-colors text-sm hover:bg-blue-50"
+          >
+            Download CV
+          </a>
         </nav>
 
         {/* Mobile Menu Toggle */}
@@ -98,6 +105,14 @@ export function Header() {
               {link.name}
             </a>
           ))}
+          <a
+            href="/Blue-Light-Blue-CV.pdf"
+            download
+            className="text-gray-800 font-medium py-2 border-b border-gray-50"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Download CV
+          </a>
         </div>
       )}
     </header>
