@@ -8,6 +8,7 @@ export function Projects() {
       title: "Genzsport",
       description:
         "University project focused on sports accessories. Core stack: Spring Boot, MySQL, and React.js. (Sport accessories - completed)",
+      status: "Completed",
       tech: ["Spring Boot", "MySQL", "React.js"],
       github: "https://github.com/Ovindu0812",
       demo: "#",
@@ -17,6 +18,7 @@ export function Projects() {
       title: "Colombo Rent Car",
       description:
         "University module for a car rental service. Stack: Spring Boot, React.js, and MongoDB. Includes rent-car features and booking flows.",
+      status: "On going",
       tech: ["Spring Boot", "React.js", "MongoDB"],
       github: "https://github.com/Ovindu0812",
       demo: "#",
@@ -29,6 +31,7 @@ export function Projects() {
       title: "Car Sale",
       description:
         "Personal project for selling cars (SUV, Sedan, Jeep, etc.). Built with React.js, Spring Boot, and MongoDB. Features listings, filters, and contact flow.",
+      status: "On going",
       tech: ["React.js", "Spring Boot", "MongoDB"],
       github: "https://github.com/Ovindu0812",
       demo: "#",
@@ -85,7 +88,14 @@ export function Projects() {
                     </div>
                   </div>
 
-                  <h4 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">{project.title}</h4>
+                  <div className="flex items-center justify-between mb-2">
+                    <h4 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">{project.title}</h4>
+                    {project.status && (
+                      <span className="ml-3 inline-flex items-center px-2 py-1 text-xs font-medium rounded-full bg-yellow-100 text-yellow-800">
+                        {project.status}
+                      </span>
+                    )}
+                  </div>
                   <p className="text-gray-600 mb-4 line-clamp-3">{project.description}</p>
 
                   <div className="flex flex-wrap gap-2 mt-auto">
@@ -130,7 +140,14 @@ export function Projects() {
                     </div>
                   </div>
 
-                  <h4 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">{project.title}</h4>
+                  <div className="flex items-center justify-between mb-2">
+                    <h4 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">{project.title}</h4>
+                    {project.status && (
+                      <span className="ml-3 inline-flex items-center px-2 py-1 text-xs font-medium rounded-full bg-yellow-100 text-yellow-800">
+                        {project.status}
+                      </span>
+                    )}
+                  </div>
                   <p className="text-gray-600 mb-4 line-clamp-3">{project.description}</p>
 
                   <div className="flex flex-wrap gap-2 mt-auto">
