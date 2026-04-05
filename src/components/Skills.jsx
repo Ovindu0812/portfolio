@@ -7,12 +7,12 @@ export function Skills() {
     {
       title: "Languages",
       icon: <Code className="w-6 h-6 text-blue-500" />,
-      skills: ["Java", "Python", "JavaScript", "TypeScript", "C++", "HTML/CSS"],
+      skills: ["Java", "Python", "JavaScript", "TypeScript", "C", "HTML/CSS"],
     },
     {
       title: "Frontend",
       icon: <Layout className="w-6 h-6 text-purple-500" />,
-      skills: ["React", "Tailwind CSS", "Next.js", "Framer Motion", "Redux"],
+      skills: ["React", "Tailwind CSS"],
     },
     {
       title: "Backend & DB",
@@ -22,7 +22,7 @@ export function Skills() {
     {
       title: "Tools & Others",
       icon: <Terminal className="w-6 h-6 text-orange-500" />,
-      skills: ["Git", "GitHub", "Docker", "Postman", "Figma", "Linux","Jira"],
+      skills: ["Git", "GitHub", "Postman", "Figma", "Linux","Jira"],
     },
   ];
 
