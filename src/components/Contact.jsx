@@ -4,6 +4,7 @@ import { Mail, MapPin, Phone, Send } from "lucide-react";
 
 export function Contact() {
   return (
+    <>
     <section id="contact" className="py-24 bg-gray-50">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
@@ -37,10 +38,10 @@ export function Contact() {
                       Phone
                     </p>
                     <a
-                      href="tel:+94771234567"
+                      href="tel:+94778724832"
                       className="hover:text-white transition-colors"
                     >
-                      +94 77 123 4567
+                      0778724832
                     </a>
                   </div>
                 </div>
@@ -117,5 +118,20 @@ export function Contact() {
         </div>
       </div>
     </section>
+      {/* WhatsApp floating button (bottom-right) */}
+      <a
+        href="https://wa.me/94778724832"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
+        title="Chat on WhatsApp"
+        className="fixed z-50 bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center"
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6">
+          <path d="M20.52 3.48A11.85 11.85 0 0 0 12 0C5.37 0 .02 5.35.02 12c0 2.12.56 4.18 1.62 6.03L0 24l6.23-1.62A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.19-3.48-8.52z" fill="#fff" opacity="0.06"/>
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.472-.148-.672.149-.198.297-.768.966-.942 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.885-.788-1.48-1.761-1.653-2.058-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.173.198-.297.298-.495.099-.198.05-.372-.025-.52-.074-.149-.672-1.611-.92-2.207-.242-.579-.487-.5-.672-.51l-.573-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.064 2.876 1.212 3.074c.149.198 2.095 3.2 5.077 4.487  .71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.413-.074-.123-.273-.198-.57-.347z" fill="#fff"/>
+        </svg>
+      </a>
+  </>
   );
 }

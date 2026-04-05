@@ -47,7 +47,7 @@ export function Education() {
                 </p>
                 <div className="flex items-center md:justify-end gap-2 text-gray-500 text-sm mb-4">
                   <Calendar className="w-4 h-4" />
-                  <span>2022 - Present</span>
+                  <span>2024 - Present</span>
                 </div>
                 <p className="text-gray-600">
                   Focusing on software engineering principles, data structures,
