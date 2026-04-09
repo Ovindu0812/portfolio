@@ -58,7 +58,7 @@ export function Hero() {
             </a>
 
             <a
-              href="/Blue-Light-Blue-CV.pdf"
+              href="/Ovindu.pdf"
               download
               className="inline-flex items-center gap-2 bg-white border border-blue-200 hover:bg-blue-50 text-blue-700 px-5 py-3 rounded-full font-medium transition-all hover:shadow-md"
             >
