@@ -13,4 +13,69 @@
 body {
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
+  background-color: #0b1120;
+  color: #e5e7eb;
+}
+
+/* Global dark theme overrides for existing utility classes */
+.bg-white {
+  background-color: #111827 !important;
+}
+
+.bg-gray-50 {
+  background-color: #0f172a !important;
+}
+
+.bg-gray-100 {
+  background-color: #1f2937 !important;
+}
+
+.border-gray-100,
+.border-gray-200,
+.border-gray-50 {
+  border-color: #374151 !important;
+}
+
+.text-gray-900,
+.text-gray-800,
+.text-gray-700 {
+  color: #f9fafb !important;
+}
+
+.text-gray-600,
+.text-gray-500,
+.text-gray-400 {
+  color: #cbd5e1 !important;
+}
+
+.hover\:text-gray-900:hover {
+  color: #ffffff !important;
+}
+
+.hover\:bg-gray-200:hover,
+.hover\:bg-gray-100:hover {
+  background-color: #374151 !important;
+}
+
+/* Keep hero gradient dark-friendly */
+.from-blue-50 {
+  --tw-gradient-from: #0b1120 var(--tw-gradient-from-position) !important;
+}
+
+.to-white {
+  --tw-gradient-to: #111827 var(--tw-gradient-to-position) !important;
+}
+
+/* Form controls on dark backgrounds */
+input,
+textarea,
+select {
+  background-color: #0f172a;
+  color: #f9fafb;
+  border-color: #374151;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #94a3b8;
 }

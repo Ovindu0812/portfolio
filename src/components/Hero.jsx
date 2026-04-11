@@ -73,7 +73,9 @@ export function Hero() {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/ovindu-jayaweera-127851200/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 rounded-full bg-gray-100 text-gray-600 hover:bg-blue-100 hover:text-blue-700 transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
