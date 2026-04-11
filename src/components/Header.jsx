@@ -65,7 +65,9 @@ export function Header() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="https://wa.me/94778724832"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full font-medium transition-colors text-sm"
           >
             Hire Me
@@ -105,6 +107,15 @@ export function Header() {
               {link.name}
             </a>
           ))}
+          <a
+            href="https://wa.me/94778724832"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-800 font-medium py-2 border-b border-gray-50"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Hire Me
+          </a>
           <a
             href="/Ovindu.pdf"
             download
