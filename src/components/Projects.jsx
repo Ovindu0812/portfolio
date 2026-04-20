@@ -11,7 +11,7 @@ export function Projects() {
       status: "Completed",
       tech: ["Spring Boot", "MySQL", "React.js"],
       github: "https://github.com/Ovindu0812",
-      demo: "#",
+      demo: "https://group34.vercel.app",
       featured: true,
     },
     {
@@ -28,13 +28,23 @@ export function Projects() {
 
   const personalProjects = [
     {
-      title: "Car Sale",
+      title: "Online Class Management",
       description:
-        "Personal project for selling cars (SUV, Sedan, Jeep, etc.). Built with React.js, Spring Boot, and MongoDB. Features listings, filters, and contact flow.",
-      status: "On going",
-      tech: ["React.js", "Spring Boot", "MongoDB"],
+        "Web application to streamline management of mathematics classes (Grade 6–11). Students can view schedules and resources; teachers can add Zoom links and YouTube content. Clean, responsive UI focused on centralized online learning.",
+      status: "Ongoing",
+      tech: ["MongoDB", "React.js", "Java Spring Boot"],
       github: "https://github.com/Ovindu0812",
       demo: "#",
+      featured: false,
+    },
+    {
+      title: "Car Sale",
+      description:
+        "Website to browse and explore vehicles (SUV, Sedan, Jeep, etc.) with images and categories. Clean, responsive design with filtering and listing features.",
+      status: "Completed",
+      tech: ["MongoDB", "React.js", "Java Spring Boot"],
+      github: "https://github.com/Ovindu0812",
+      demo: "https://carsale-one.vercel.app",
       featured: false,
     },
   ];
