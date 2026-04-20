@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Menu, X, Code2 } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -49,7 +49,6 @@ export function Header() {
           href="#"
           className="flex items-center gap-2 text-blue-900 font-bold text-xl tracking-tight"
         >
-          <Code2 className="w-6 h-6 text-blue-600" />
           <span>Ovindu Jayaweera</span>
         </a>
 

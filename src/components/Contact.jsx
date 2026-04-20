@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 
 export function Contact() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const subject = `Portfolio message from ${firstName} ${lastName}`;
+    const body = `Name: ${firstName} ${lastName}\nEmail: ${email}\n\n${message}`;
+    window.location.href = `mailto:oviduni00@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+  };
+
   return (
-    <>
+    <div>
     <section id="contact" className="py-24 bg-gray-50">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
@@ -51,7 +65,7 @@ export function Contact() {
                     <p className="text-sm text-blue-200 font-medium mb-1">
                       Location
                     </p>
-                    <p>Colombo, Sri Lanka</p>
+                    <p>Kurunegala, Sri Lanka</p>
                   </div>
                 </div>
               </div>
@@ -59,7 +73,7 @@ export function Contact() {
 
             {/* Contact Form */}
             <div className="md:col-span-3 p-10">
-              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-700">
@@ -67,8 +81,9 @@ export function Contact() {
                     </label>
                     <input
                       type="text"
+                      value={firstName}
+                      onChange={(e) => setFirstName(e.target.value)}
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
-                      placeholder="John"
                     />
                   </div>
                   <div className="space-y-2">
@@ -77,8 +92,9 @@ export function Contact() {
                     </label>
                     <input
                       type="text"
+                      value={lastName}
+                      onChange={(e) => setLastName(e.target.value)}
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
-                      placeholder="Doe"
                     />
                   </div>
                 </div>
@@ -89,8 +105,9 @@ export function Contact() {
                   </label>
                   <input
                     type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
-                    placeholder="john@example.com"
                   />
                 </div>
 
@@ -100,6 +117,8 @@ export function Contact() {
                   </label>
                   <textarea
                     rows={4}
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all resize-none"
                     placeholder="How can I help you?"
                   />
@@ -132,6 +151,6 @@ export function Contact() {
           <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.472-.148-.672.149-.198.297-.768.966-.942 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.885-.788-1.48-1.761-1.653-2.058-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.173.198-.297.298-.495.099-.198.05-.372-.025-.52-.074-.149-.672-1.611-.92-2.207-.242-.579-.487-.5-.672-.51l-.573-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.064 2.876 1.212 3.074c.149.198 2.095 3.2 5.077 4.487  .71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.413-.074-.123-.273-.198-.57-.347z" fill="#fff"/>
         </svg>
       </a>
-  </>
+  </div>
   );
 }

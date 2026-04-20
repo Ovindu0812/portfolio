@@ -125,7 +125,7 @@ export function Hero() {
               className="absolute bottom-8 left-8 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-4"
             >
               <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xl">
-                {"</>"}
+                CS
               </div>
               <div>
                 <p className="text-sm text-gray-500 font-medium">
