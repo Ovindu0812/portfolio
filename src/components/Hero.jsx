@@ -107,9 +107,9 @@ export function Hero() {
         >
           <div className="aspect-square rounded-3xl overflow-hidden bg-gradient-to-tr from-blue-100 to-blue-50 relative border-8 border-white shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop"
-              alt="Coding setup"
-              className="w-full h-full object-cover opacity-90 mix-blend-multiply"
+              src="/ovindu-profile.jpg"
+              alt="Ovindu Jayaweera"
+              className="w-full h-full object-cover"
             />
 
             {/* Floating badge */}

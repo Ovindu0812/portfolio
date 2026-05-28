@@ -121,7 +121,7 @@ export function Education() {
                 <p className="text-gray-600 font-medium mb-2">High School</p>
                 <div className="flex items-center md:justify-end gap-2 text-gray-500 text-sm">
                   <Calendar className="w-4 h-4" />
-                  <span>Completed 2021</span>
+                  <span>Completed 2022</span>
                 </div>
               </div>
             </div>

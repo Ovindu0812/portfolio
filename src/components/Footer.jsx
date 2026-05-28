@@ -1,5 +1,5 @@
 import React from "react";
-import { Code2, Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, Twitter } from "lucide-react";
 
 export function Footer() {
   return (
@@ -7,7 +7,6 @@ export function Footer() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-2 text-gray-900 font-bold text-xl tracking-tight">
-            <Code2 className="w-6 h-6 text-blue-600" />
             <span>Ovindu Jayaweera</span>
           </div>
 

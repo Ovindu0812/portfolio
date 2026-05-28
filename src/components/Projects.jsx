@@ -10,6 +10,8 @@ export function Projects() {
         "University project focused on sports accessories. Core stack: Spring Boot, MySQL, and React.js. (Sport accessories - completed)",
       status: "Completed",
       tech: ["Spring Boot", "MySQL", "React.js"],
+      image:
+        "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1600&auto=format&fit=crop",
       github: "https://github.com/Ovindu0812",
       demo: "https://group34.vercel.app",
       featured: true,
@@ -20,6 +22,8 @@ export function Projects() {
         "University module for a car rental service. Stack: Spring Boot, React.js, and MongoDB. Includes rent-car features and booking flows.",
       status: "On going",
       tech: ["Spring Boot", "React.js", "MongoDB"],
+      image:
+        "https://images.unsplash.com/photo-1493238792000-8113da705763?q=80&w=1600&auto=format&fit=crop",
       github: "https://github.com/Ovindu0812",
       demo: "#",
       featured: true,
@@ -33,6 +37,8 @@ export function Projects() {
         "Web application to streamline management of mathematics classes (Grade 6–11). Students can view schedules and resources; teachers can add Zoom links and YouTube content. Clean, responsive UI focused on centralized online learning.",
       status: "Ongoing",
       tech: ["MongoDB", "React.js", "Java Spring Boot"],
+      image:
+        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop",
       github: "https://github.com/Ovindu0812",
       demo: "#",
       featured: false,
@@ -43,6 +49,8 @@ export function Projects() {
         "Website to browse and explore vehicles (SUV, Sedan, Jeep, etc.) with images and categories. Clean, responsive design with filtering and listing features.",
       status: "Completed",
       tech: ["MongoDB", "React.js", "Java Spring Boot"],
+      image:
+        "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1600&auto=format&fit=crop",
       github: "https://github.com/Ovindu0812",
       demo: "https://carsale-one.vercel.app",
       featured: false,
@@ -80,6 +88,15 @@ export function Projects() {
                   transition={{ duration: 0.5, delay: idx * 0.08 }}
                   className={`group relative rounded-2xl border border-gray-200 p-8 hover:border-blue-300 transition-colors bg-white`}
                 >
+                  {project.image && (
+                    <div className="mb-6 overflow-hidden rounded-xl border border-gray-100">
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-44 object-cover"
+                      />
+                    </div>
+                  )}
                   <div className="flex justify-between items-start mb-6">
                     <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600">
                       <Folder className="w-6 h-6" />
@@ -132,6 +149,15 @@ export function Projects() {
                   transition={{ duration: 0.5, delay: idx * 0.08 }}
                   className={`group relative rounded-2xl border border-gray-200 p-8 hover:border-blue-300 transition-colors bg-white`}
                 >
+                  {project.image && (
+                    <div className="mb-6 overflow-hidden rounded-xl border border-gray-100">
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-44 object-cover"
+                      />
+                    </div>
+                  )}
                   <div className="flex justify-between items-start mb-6">
                     <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600">
                       <Folder className="w-6 h-6" />

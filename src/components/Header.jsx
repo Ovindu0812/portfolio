@@ -58,9 +58,11 @@ export function Header() {
             <a
               key={link.name}
               href={link.href}
-              className="text-gray-600 hover:text-blue-600 font-medium transition-colors text-sm uppercase tracking-wider"
+              className="font-medium transition-colors text-sm uppercase tracking-wider"
             >
-              {link.name}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">
+                {link.name}
+              </span>
             </a>
           ))}
           <a
@@ -100,10 +102,12 @@ export function Header() {
             <a
               key={link.name}
               href={link.href}
-              className="text-gray-800 font-medium py-2 border-b border-gray-50"
+              className="font-medium py-2 border-b border-gray-50 uppercase"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              {link.name}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">
+                {link.name}
+              </span>
             </a>
           ))}
           <a
